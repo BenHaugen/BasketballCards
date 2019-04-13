@@ -2,5 +2,5 @@ class UserSerializer < ActiveModel::Serializer
   attributes :id, :name, :password
 
   has_many :player_cards
-  has_many :player_cards, through: :users
+  has_many :players, through: :player_cards
 end

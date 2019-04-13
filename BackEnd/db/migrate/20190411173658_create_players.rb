@@ -6,8 +6,9 @@ class CreatePlayers < ActiveRecord::Migration[5.2]
       t.string :team_name
       t.string :img
       t.string :position
-      t.integer :weight
-      t.integer :height
+      t.integer :weight_pounds
+      t.integer :height_feet
+      t.integer :height_inches
       t.string :logo
 
       t.timestamps
