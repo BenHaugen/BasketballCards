@@ -3,4 +3,5 @@ class UserSerializer < ActiveModel::Serializer
 
   has_many :player_cards
   has_many :players, through: :player_cards
+  has_many :teams
 end
