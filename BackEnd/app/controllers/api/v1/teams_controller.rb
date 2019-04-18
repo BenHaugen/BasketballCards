@@ -21,6 +21,12 @@ class Api::V1::TeamsController < ApplicationController
     # binding.pry
   end
 
+  def destroy
+    @team = Team.find(params[:id])
+    @team.destroy
+  end
+
+
   private
 
   def team_params
